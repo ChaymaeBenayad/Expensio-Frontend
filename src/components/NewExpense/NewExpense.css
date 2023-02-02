@@ -1,0 +1,25 @@
+.new-expense {
+  background-color: #3ab4f2;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  text-align: center;
+}
+
+.new-expense .btn {
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.6rem 1.6rem;
+  background-color: #f2df3a;
+  color: #0078aa;
+  border-radius: 25px;
+  margin-right: 1rem;
+  border: none;
+}
+
+.new-expense .btn:hover,
+.new-expense .btn:active {
+  background-color: #ffea11;
+}
