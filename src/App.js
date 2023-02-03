@@ -10,7 +10,7 @@ const App = () => {
     const getExpenses = async () => {
       try {
         const getExpensesUrl = process.env.REACT_APP_BASE_URL;
-        const res = await axios.get(getExpensesUrl);
+        const res = await axios.get(`${getExpensesUrl}/api/expenses`);
         const expensesData = res.data.map((expense) => ({
           ...expense,
           date: new Date(expense.date),

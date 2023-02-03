@@ -34,7 +34,10 @@ const ExpenseForm = (props) => {
       };
       //post form data
       const postExpensesUrl = process.env.REACT_APP_BASE_URL;
-      const response = await axios.post(postExpensesUrl, expenses);
+      const response = await axios.post(
+        `${postExpensesUrl}/api/expenses`,
+        expenses
+      );
       if (response.status === 201) {
         props.onSaveExpenseData(expenses);
         toast.success(`${expenses.title} added successfully !`);
